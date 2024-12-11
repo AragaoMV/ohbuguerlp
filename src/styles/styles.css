@@ -66,7 +66,35 @@ body {
     background-color: #50442C;
 }
 
-/* Ajustes específicos para telas menores (375px e menores) */
+/* Banner */
+#banner {
+    width: 100%;
+    height: auto; /* Altura do banner, ajuste conforme necessário */
+    background: linear-gradient(
+        to right,
+        #000000 0%, /* Preta no início */
+        #1f1a11 16%, /* Castanho mais claro */
+        #594b31 41%, /* Cor intermediária */
+        #1f1a11 77%, /* Castanho mais claro */
+        #000000 99% /* Preta no final */
+    );
+    display: flex;
+    justify-content: flex-end; /* Alinhamento da imagem à direita */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    color: #ffffff; /* Cor do texto dentro do banner */
+    text-align: center;
+    font-size: 2rem; /* Tamanho do texto, ajuste conforme necessário */
+    position: relative; /* Adiciona posição para os elementos dentro do banner */
+}
+
+#banner img {
+    width: 40%; /* Ajuste conforme necessário para a imagem */
+    height: auto;
+    bottom: 0; /* Alinha a imagem na parte inferior */
+    right: 0; /* Alinha a imagem à direita do banner */
+}
+
+/* Ajustes específicos para telas menores (700px e menores) */
 @media (max-width: 700px) {
     #navbar {
         padding-right: 1rem;
@@ -89,5 +117,12 @@ body {
     .nav-button {
         font-size: 0.625rem; /* Tamanho menor do texto */
         padding: 0.5rem; /* Reduz o padding */
+    }
+
+    #banner img {
+        width: 100%; /* Faz a imagem ocupar toda a largura no mobile */
+        height: auto; /* Mantém a proporção da imagem */
+        bottom: 0; /* Coloca a imagem na parte inferior do banner */
+        right: 0; /* Alinha a imagem à direita do banner */
     }
 }
