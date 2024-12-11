@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     margin: 0;
@@ -11,16 +12,17 @@ body {
     background-color: #414141;
 }
 
-/* Estilos da navbar */
 #navbar {
     display: flex;
     padding: 0.5rem 6.75rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    background-color: #333;
+    background-color: #414141;
     padding-right: clamp(1rem, 5vw, 6.75rem);
     padding-left: clamp(1rem, 5vw, 6.75rem);
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Define a fonte Roboto para todos os textos da navbar */
 }
 
 #navbar img {
@@ -29,19 +31,21 @@ body {
     margin-right: auto;
 }
 
-/* Container dos botões de navegação */
 .nav-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5.8125rem; /* Espaço entre os botões */
+    gap: 5.8125rem;
+    /* Espaçamento entre os links */
 }
 
-/* Links padrão */
 .nav-link {
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Garante a fonte Roboto */
     font-size: 1.25rem;
+    /* Tamanho da fonte */
     transition: color 0.3s;
     display: inline-block;
 }
@@ -50,51 +54,115 @@ body {
     color: #f5a623;
 }
 
-/* Botão "Faça seu Pedido" */
+/* Botão do menu de navegação */
 .nav-button {
     text-decoration: none;
     color: #ffffff;
     background-color: #594b31;
     padding: 1rem;
     border-radius: 0.5rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Garante a fonte Roboto */
     font-size: 1.25rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
     display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 .nav-button:hover {
     background-color: #50442C;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.35);
 }
 
-/* Banner */
 #banner {
     width: 100%;
-    height: auto; /* Altura do banner, ajuste conforme necessário */
-    background: linear-gradient(
-        to right,
-        #000000 0%, /* Preta no início */
-        #1f1a11 16%, /* Castanho mais claro */
-        #594b31 41%, /* Cor intermediária */
-        #1f1a11 77%, /* Castanho mais claro */
-        #000000 99% /* Preta no final */
-    );
+    height: auto;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.6) 0%,
+            /* Preta no início com opacidade de 60% */
+            rgba(31, 26, 17, 0.6) 16%,
+            /* Castanho mais claro com opacidade de 60% */
+            rgba(89, 75, 49, 0.6) 41%,
+            /* Cor intermediária com opacidade de 60% */
+            rgba(31, 26, 17, 0.6) 77%,
+            /* Castanho mais claro com opacidade de 60% */
+            rgba(0, 0, 0, 0.6) 99%
+            /* Preta no final com opacidade de 60% */
+        );
+
     display: flex;
-    justify-content: flex-end; /* Alinhamento da imagem à direita */
-    align-items: center; /* Centraliza conteúdo verticalmente */
-    color: #ffffff; /* Cor do texto dentro do banner */
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
     text-align: center;
-    font-size: 2rem; /* Tamanho do texto, ajuste conforme necessário */
-    position: relative; /* Adiciona posição para os elementos dentro do banner */
+    font-size: 2rem;
+    position: relative;
 }
 
 #banner img {
-    width: 40%; /* Ajuste conforme necessário para a imagem */
+    width: 47%;
     height: auto;
-    bottom: 0; /* Alinha a imagem na parte inferior */
-    right: 0; /* Alinha a imagem à direita do banner */
 }
 
-/* Ajustes específicos para telas menores (700px e menores) */
+.nome-banner {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    /* Diminui em telas menores */
+    color: #978053;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.titulo-banner {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 4rem);
+    /* Diminui proporcionalmente */
+    color: #ffffff;
+    letter-spacing: -0.04em;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Descrição do banner */
+#banner h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 2rem);
+    /* Ajusta dinamicamente */
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+
+/* Botão do banner */
+.button-banner {
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Garante a fonte Roboto */
+    font-weight: 500;
+    /* Define o peso como medium */
+    font-size: 1.25rem;
+    /* 20px convertido para rem */
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #594b31;
+    padding: 1.25rem 8.3125rem;
+    /* 20px vertical e 133px lateral convertidos para rem */
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Efeito de drop shadow */
+    text-align: center;
+}
+
+.button-banner:hover {
+    background-color: #50442c;
+}
+
+
 @media (max-width: 700px) {
     #navbar {
         padding-right: 1rem;
@@ -107,22 +175,53 @@ body {
     }
 
     .nav-buttons {
-        gap: 0.75rem; /* Espaço entre os botões no mobile */
+        gap: 0.75rem;
     }
 
     .nav-link {
-        font-size: 1rem; /* Ajusta o tamanho da fonte para mobile */
+        font-size: 1rem;
     }
 
     .nav-button {
-        font-size: 0.625rem; /* Tamanho menor do texto */
-        padding: 0.5rem; /* Reduz o padding */
+        font-size: 0.625rem;
+        padding: 0.5rem;
+    }
+
+    #banner {
+        flex-direction: column;
+        /* Alinha itens verticalmente */
+        align-items: center;
+        /* Centraliza os itens */
+        padding: 1rem;
+        /* Adiciona espaçamento interno */
     }
 
     #banner img {
-        width: 100%; /* Faz a imagem ocupar toda a largura no mobile */
-        height: auto; /* Mantém a proporção da imagem */
-        bottom: 0; /* Coloca a imagem na parte inferior do banner */
-        right: 0; /* Alinha a imagem à direita do banner */
+        width: 80%;
+        /* Ajusta o tamanho da imagem */
+        height: auto;
+        margin: 1rem 0;
+        /* Adiciona espaço entre os elementos */
+    }
+
+    .nome-banner {
+        font-size: 1.5rem;
+    }
+
+    .titulo-banner {
+        font-size: 2rem;
+    }
+
+    #banner h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        /* Espaçamento inferior */
+    }
+
+    .button-banner {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        /* Espaçamento superior */
     }
 }
