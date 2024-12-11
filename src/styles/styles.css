@@ -14,28 +14,80 @@ body {
 /* Estilos da navbar */
 #navbar {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.5rem 6.75rem;
     justify-content: space-between;
     align-items: center;
+    align-self: stretch;
     background-color: #333;
     padding-right: clamp(1rem, 5vw, 6.75rem);
     padding-left: clamp(1rem, 5vw, 6.75rem);
 }
 
 #navbar img {
-    width: 5vw; 
-    height: 5vw;
+    width: clamp(3rem, 5vw, 5rem);
+    height: clamp(3rem, 5vw, 5rem);
+    margin-right: auto;
+}
+
+/* Container dos botões de navegação */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.8125rem; /* Espaço entre os botões */
+}
+
+/* Links padrão */
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #f5a623;
+}
+
+/* Botão "Faça seu Pedido" */
+.nav-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #594b31;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: #50442C;
 }
 
 /* Ajustes específicos para telas menores (375px e menores) */
-@media (max-width: 375px) {
+@media (max-width: 700px) {
     #navbar {
         padding-right: 1rem;
         padding-left: 1rem;
     }
 
     #navbar img {
-        width: 3rem; 
-        height: 3rem; 
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nav-buttons {
+        gap: 0.75rem; /* Espaço entre os botões no mobile */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para mobile */
+    }
+
+    .nav-button {
+        font-size: 0.625rem; /* Tamanho menor do texto */
+        padding: 0.5rem; /* Reduz o padding */
     }
 }
