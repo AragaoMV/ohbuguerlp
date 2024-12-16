@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh Burguer</title>
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Menu Superior -->
     <header>
         <nav id="navbar">
             <img src="src/media/logo.png" alt="Logo Oh Burguer">
@@ -19,6 +21,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- Banner -->
     <div id="banner">
         <div>
             <div>
@@ -28,11 +32,32 @@
             </div>
             <a href="#" class="button-banner">Faça seu pedido</a>
         </div>
-        
         <img src="src/media/foto_banner.png" alt="Banner Image">
-
     </div>
 
+    <!-- Cards de Informação -->
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <i class="material-icons">calendar_month</i>
+            <p>Estamos abertos de <span class="highlight">Segunda</span> à <span class="highlight">Domingo</span></p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <i class="material-icons">two_wheeler</i>
+            <p>Funcionamos de <span class="highlight">18h</span> às <span class="highlight">2h</span></p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <i class="material-icons">location_on</i>
+            <p>Atuamos em todo o <span class="highlight">Valparaiso - GO</span></p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <i class="material-icons">call</i>
+            <p>Pedidos via <span class="highlight">WhatsApp</span> ou <span class="highlight">iFood</span></p>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -134,6 +134,7 @@ body {
     /* Ajusta dinamicamente */
     color: #FFFFFF;
     padding: 1rem;
+    margin-bottom: 4;
 }
 
 
@@ -156,10 +157,52 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* Efeito de drop shadow */
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .button-banner:hover {
     background-color: #50442c;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+    margin: 1rem 6.75px;
+}
+
+.card {
+    width: 288px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.card i {
+    font-size: 150px;
+    color: #FFFFFF;
+    margin-bottom: 0.25rem;
+}
+
+.card p {
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.highlight {
+    color: #594B31;
 }
 
 
@@ -188,20 +231,17 @@ body {
     }
 
     #banner {
-        flex-direction: column;
-        /* Alinha itens verticalmente */
-        align-items: center;
-        /* Centraliza os itens */
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
         padding: 1rem;
-        /* Adiciona espaçamento interno */
+        text-align: center; /* Centraliza textos dentro do banner */
     }
 
     #banner img {
-        width: 80%;
-        /* Ajusta o tamanho da imagem */
+        width: 100%;
         height: auto;
-        margin: 1rem 0;
-        /* Adiciona espaço entre os elementos */
+        margin: 0; /* Remove possíveis margens */
     }
 
     .nome-banner {
@@ -215,13 +255,29 @@ body {
     #banner h3 {
         font-size: 1rem;
         margin-bottom: 1rem;
-        /* Espaçamento inferior */
     }
 
     .button-banner {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
-        margin-top: 1rem;
-        /* Espaçamento superior */
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+
+    .card-container {
+        justify-content: center;
+        gap: 0.25rem;
+    }
+
+    .card {
+        width: 74px;
+        height: 100px;
+    }
+
+    .card i {
+        font-size: 36px;
+    }
+
+    .card p {
+        font-size: 10px;
     }
 }
