@@ -77,7 +77,6 @@ h6 {
     padding-right: clamp(1rem, 5vw, 6.75rem);
     padding-left: clamp(1rem, 5vw, 6.75rem);
     font-family: 'Roboto', Arial, sans-serif;
-    /* Define a fonte Roboto para todos os textos da navbar */
 }
 
 #navbar img {
@@ -91,16 +90,13 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 5.8125rem;
-    /* Espaçamento entre os links */
 }
 
 .nav-link {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Roboto', Arial, sans-serif;
-    /* Garante a fonte Roboto */
     font-size: 1.25rem;
-    /* Tamanho da fonte */
     transition: color 0.3s;
     display: inline-block;
 }
@@ -117,7 +113,6 @@ h6 {
     padding: 1rem;
     border-radius: 0.5rem;
     font-family: 'Roboto', Arial, sans-serif;
-    /* Garante a fonte Roboto */
     font-size: 1.25rem;
     transition: background-color 0.3s, box-shadow 0.3s;
     display: inline-block;
@@ -163,7 +158,6 @@ h6 {
 .nome-banner {
     font-family: 'Anton', sans-serif;
     font-size: clamp(1.5rem, 4vw, 3rem);
-    /* Diminui em telas menores */
     color: #978053;
     text-align: center;
     margin-bottom: 2rem;
@@ -174,7 +168,6 @@ h6 {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     font-size: clamp(2rem, 5vw, 4rem);
-    /* Diminui proporcionalmente */
     color: #ffffff;
     letter-spacing: -0.04em;
     text-align: center;
@@ -186,7 +179,6 @@ h6 {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: bold;
     font-size: clamp(1rem, 3vw, 2rem);
-    /* Ajusta dinamicamente */
     color: #FFFFFF;
     padding: 1rem;
     margin-bottom: 4;
@@ -196,16 +188,12 @@ h6 {
 /* Botão do banner */
 .button-banner {
     font-family: 'Roboto', Arial, sans-serif;
-    /* Garante a fonte Roboto */
     font-weight: 500;
-    /* Define o peso como medium */
     font-size: 1.25rem;
-    /* 20px convertido para rem */
     text-decoration: none;
     color: #ffffff;
     background-color: #594b31;
     padding: 1.25rem 8.3125rem;
-    /* 20px vertical e 133px lateral convertidos para rem */
     border-radius: 0.5rem;
     display: inline-block;
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -323,11 +311,8 @@ h6 {
 
 .hamburger-card-button {
     font-family: 'Roboto', Arial, sans-serif;
-    /* Garante a fonte Roboto */
     font-weight: 500;
-    /* Define o peso como medium */
     font-size: 1rem;
-    /* 20px convertido para rem */
     text-decoration: none;
     color: #FFF;
     background-color: #594B31;
