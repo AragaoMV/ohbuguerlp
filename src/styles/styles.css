@@ -282,6 +282,7 @@ h6 {
 }
 
 .hamburguer-card-info-container {
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -303,6 +304,7 @@ h6 {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-align: center;
 }
 
 .hamburger-card-price {
