@@ -12,6 +12,61 @@ body {
     background-color: #414141;
 }
 
+h1 {
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    text-align: center;
+}
+
+h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h5 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h6 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 #navbar {
     display: flex;
     padding: 0.5rem 6.75rem;
@@ -201,15 +256,101 @@ body {
     font-weight: 500;
     line-height: normal;
 }
+
 .highlight {
     color: #594B31;
 }
+
+.hamburguer-section-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hamburger-card-container {
+    display: flex;
+    padding: 0rem 6.75rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.hamburger-card {
+    width: 290px;
+    height: 526px;
+    background-color: #1e1e1e;
+    border: 1px solid #594b31;
+    border-radius: 1rem;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hamburger-card-img {
+    height: 196px;
+    width: 258;
+    border-radius: 1rem;
+}
+
+.hamburguer-card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    padding: 12px;
+    gap: 35px;
+}
+
+.hamburger-card-name {
+    text-align: center;
+}
+
+.hamburger-card-desc {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hamburger-card-price {
+    font-family: Roboto;
+}
+
+.hamburger-card-button {
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Garante a fonte Roboto */
+    font-weight: 500;
+    /* Define o peso como medium */
+    font-size: 1rem;
+    /* 20px convertido para rem */
+    text-decoration: none;
+    color: #FFF;
+    background-color: #594B31;
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.hamburger-card-button:hover {
+    background-color: #50442c;
+}
+
 
 @media (max-width: 1150px) {
     .card {
         width: 200px;
         height: 200px;
     }
+
     .card i {
         font-size: 100px;
     }
@@ -244,17 +385,17 @@ body {
     }
 
     #banner {
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
-        text-align: center; 
+        text-align: center;
     }
 
     #banner img {
         width: 100%;
         height: auto;
-        margin-top: -7rem; 
+        margin-top: -7rem;
     }
 
     .nome-banner {
@@ -279,7 +420,7 @@ body {
     }
 
     .card-container {
-        padding: 0rem 1rem;      
+        padding: 0rem 1rem;
         gap: 1rem;
     }
 
