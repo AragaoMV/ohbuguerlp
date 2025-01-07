@@ -261,6 +261,7 @@ h6 {
     align-items: center;
     align-self: stretch;
 }
+
 .hamburger-card-container2 {
     display: flex;
     margin: 1rem 340px;
@@ -330,9 +331,90 @@ h6 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 28px;
 }
+
 .hamburger-card-button:hover {
     background-color: #50442c;
 }
+
+.hotdog-card-container {
+    display: flex;
+    margin: 1rem 108px;
+    gap: 232px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.hotdog-section-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hotdog-card {
+    width: 290px;
+    height: 526px;
+    background-color: #1e1e1e;
+    border: 1px solid #594b31;
+    border-radius: 1rem;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hotdog-card-img {
+    height: 196px;
+    width: 258px;
+    border-radius: 1rem;
+}
+
+.hotdog-card-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.hotdog-card-name {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hotdog-card-desc {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hotdog-card-button {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #594B31;
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 28px;
+}
+
+.hotdog-card-button:hover {
+    background-color: #50442c;
+}
+
 
 
 @media (max-width: 1150px) {
