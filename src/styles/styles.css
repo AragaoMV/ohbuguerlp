@@ -15,6 +15,7 @@ body {
 h1 {
     font-family: 'Roboto';
     font-size: 2.5rem;
+    /* 40px */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -26,6 +27,7 @@ h2 {
     color: #FFF;
     font-family: Roboto;
     font-size: 2.25rem;
+    /* 36px */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -35,6 +37,7 @@ h3 {
     color: #FFF;
     font-family: Roboto;
     font-size: 2rem;
+    /* 32px */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -44,6 +47,7 @@ h4 {
     color: #FFF;
     font-family: Roboto;
     font-size: 1.75rem;
+    /* 28px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -53,6 +57,7 @@ h5 {
     color: #FFF;
     font-family: Roboto;
     font-size: 1.5rem;
+    /* 24px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -62,6 +67,7 @@ h6 {
     color: #FFF;
     font-family: Roboto;
     font-size: 1.25rem;
+    /* 20px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -70,18 +76,23 @@ h6 {
 #navbar {
     display: flex;
     padding: 0.5rem 6.75rem;
+    /* 8px 108px */
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
     background-color: #414141;
     padding-right: clamp(1rem, 5vw, 6.75rem);
+    /* 16px, 5vw, 108px */
     padding-left: clamp(1rem, 5vw, 6.75rem);
+    /* 16px, 5vw, 108px */
     font-family: 'Roboto', Arial, sans-serif;
 }
 
 #navbar img {
     width: clamp(3rem, 5vw, 5rem);
+    /* 48px, 5vw, 80px */
     height: clamp(3rem, 5vw, 5rem);
+    /* 48px, 5vw, 80px */
     margin-right: auto;
 }
 
@@ -90,6 +101,7 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 5.8125rem;
+    /* 93px */
 }
 
 .nav-link {
@@ -97,6 +109,7 @@ h6 {
     color: #ffffff;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.25rem;
+    /* 20px */
     transition: color 0.3s;
     display: inline-block;
 }
@@ -111,18 +124,22 @@ h6 {
     color: #ffffff;
     background-color: #594b31;
     padding: 1rem;
+    /* 16px */
     border-radius: 0.5rem;
+    /* 8px */
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.25rem;
+    /* 20px */
     transition: background-color 0.3s, box-shadow 0.3s;
     display: inline-block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* 4px */
 }
-
 
 .nav-button:hover {
     background-color: #50442C;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.35);
+    /* 6px */
 }
 
 #banner {
@@ -130,16 +147,10 @@ h6 {
     height: auto;
     background: linear-gradient(to right,
             rgba(0, 0, 0, 0.6) 0%,
-            /* Preta no início com opacidade de 60% */
             rgba(31, 26, 17, 0.6) 16%,
-            /* Castanho mais claro com opacidade de 60% */
             rgba(89, 75, 49, 0.6) 41%,
-            /* Cor intermediária com opacidade de 60% */
             rgba(31, 26, 17, 0.6) 77%,
-            /* Castanho mais claro com opacidade de 60% */
-            rgba(0, 0, 0, 0.6) 99%
-            /* Preta no final com opacidade de 60% */
-        );
+            rgba(0, 0, 0, 0.6) 99%);
 
     display: flex;
     justify-content: flex-end;
@@ -147,6 +158,7 @@ h6 {
     color: #ffffff;
     text-align: center;
     font-size: 2rem;
+    /* 32px */
     position: relative;
 }
 
@@ -158,20 +170,23 @@ h6 {
 .nome-banner {
     font-family: 'Anton', sans-serif;
     font-size: clamp(1.5rem, 4vw, 3rem);
+    /* 24px, 4vw, 48px */
     color: #978053;
     text-align: center;
     margin-bottom: 2rem;
+    /* 32px */
 }
-
 
 .titulo-banner {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     font-size: clamp(2rem, 5vw, 4rem);
+    /* 32px, 5vw, 64px */
     color: #ffffff;
     letter-spacing: -0.04em;
     text-align: center;
     padding: 1rem;
+    /* 16px */
 }
 
 /* Descrição do banner */
@@ -179,28 +194,34 @@ h6 {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: bold;
     font-size: clamp(1rem, 3vw, 2rem);
+    /* 16px, 3vw, 32px */
     color: #FFFFFF;
     padding: 1rem;
+    /* 16px */
     margin-bottom: 4;
+    /* 64px */
 }
-
 
 /* Botão do banner */
 .button-banner {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
+    /* 20px */
     text-decoration: none;
     color: #ffffff;
     background-color: #594b31;
     padding: 1.25rem 8.3125rem;
+    /* 20px 133px */
     border-radius: 0.5rem;
+    /* 8px */
     display: inline-block;
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /* Efeito de drop shadow */
+    /* 4px */
     text-align: center;
     margin-bottom: 5rem;
+    /* 80px */
 }
 
 .button-banner:hover {
@@ -211,35 +232,44 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: auto;
+    gap: 24px;
+    /* 384px */
     margin: 1rem 6.75rem;
+    /* 16px 108px */
 }
 
 .card {
     width: 288px;
+    /* 460px */
     height: 252px;
+    /* 400px */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
+    /* 256px */
     background-color: #1e1e1e;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* 4px */
     padding: 1rem;
+    /* 16px */
     text-align: center;
 }
 
-
 .card i {
     font-size: 150px;
+    /* 240px */
     color: #FFFFFF;
     margin-bottom: 0.25rem;
+    /* 4px */
 }
 
 .card p {
     font-family: Roboto;
     color: #FFFFFF;
     font-size: 1.75rem;
+    /* 28px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -249,14 +279,18 @@ h6 {
     color: #594B31;
 }
 
+
 .hamburguer-section-title {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    /* 40px */
+    padding-bottom: 2.5rem;
+    /* 40px */
 }
 
 .hamburger-card-container {
     display: flex;
-    margin: 1rem 108px;
+    margin: 1rem 6.75rem;
+    /* 108px */
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -264,29 +298,38 @@ h6 {
 
 .hamburger-card-container2 {
     display: flex;
-    margin: 1rem 340px;
+    margin: 1rem 21.25rem;
+    /* 340px */
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
 }
 
 .hamburger-card {
-    width: 290px;
-    height: 526px;
+    width: 18.125rem;
+    /* 290px */
+    height: 32.875rem;
+    /* 526px */
     background-color: #1e1e1e;
     border: 1px solid #594b31;
     border-radius: 1rem;
-    padding: 16px;
+    /* 16px */
+    padding: 1rem;
+    /* 16px */
     display: flex;
     flex-direction: column;
     gap: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    /* 4px */
 }
 
 .hamburger-card-img {
-    height: 196px;
-    width: 258px;
+    height: 12.25rem;
+    /* 196px */
+    width: 16.125rem;
+    /* 258px */
     border-radius: 1rem;
+    /* 16px */
 }
 
 .hamburguer-card-info-container {
@@ -307,6 +350,7 @@ h6 {
     color: #FFFFFF;
     font-family: Roboto;
     font-size: 1rem;
+    /* 16px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -318,18 +362,24 @@ h6 {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    /* 16px */
     text-decoration: none;
     color: #FFF;
     background-color: #594B31;
     display: flex;
     padding: 0.75rem;
+    /* 12px */
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    /* 10px */
     align-self: stretch;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 28px;
+    /* 8px */
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
+    /* 4px */
+    margin-top: 1.75rem;
+    /* 28px */
 }
 
 .hamburger-card-button:hover {
@@ -338,34 +388,47 @@ h6 {
 
 .hotdog-card-container {
     display: flex;
-    margin: 1rem 108px;
-    gap: 232px;
+    margin: 1rem 6.75rem;
+    /* 108px */
+    gap: 14.5rem;
+    /* 232px */
     justify-content: center;
     align-items: center;
     align-self: stretch;
 }
 
 .hotdog-section-title {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    /* 40px */
+    padding-bottom: 2.5rem;
+    /* 40px */
 }
+
 .hotdog-card {
-    width: 290px;
-    height: 526px;
+    width: 18.125rem;
+    /* 290px */
+    height: 32.875rem;
+    /* 526px */
     background-color: #1e1e1e;
     border: 1px solid #594b31;
     border-radius: 1rem;
-    padding: 16px;
+    /* 16px */
+    padding: 1rem;
+    /* 16px */
     display: flex;
     flex-direction: column;
     gap: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    /* 4px */
 }
 
 .hotdog-card-img {
-    height: 196px;
-    width: 258px;
+    height: 12.25rem;
+    /* 196px */
+    width: 16.125rem;
+    /* 258px */
     border-radius: 1rem;
+    /* 16px */
 }
 
 .hotdog-card-info-container {
@@ -386,6 +449,7 @@ h6 {
     color: #FFFFFF;
     font-family: Roboto;
     font-size: 1rem;
+    /* 16px */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -397,18 +461,24 @@ h6 {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    /* 16px */
     text-decoration: none;
     color: #FFF;
     background-color: #594B31;
     display: flex;
     padding: 0.75rem;
+    /* 12px */
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    /* 10px */
     align-self: stretch;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 28px;
+    /* 8px */
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
+    /* 4px */
+    margin-top: 1.75rem;
+    /* 28px */
 }
 
 .hotdog-card-button:hover {
@@ -416,44 +486,62 @@ h6 {
 }
 
 
-
 @media (max-width: 1150px) {
-    .card {
-        width: 200px;
-        height: 200px;
+    .card-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        /* 16px */
+        padding: 0 1rem;
+        /* 16px */
+        width: 100%;
+        margin: 0.75rem 0;
+        /* 12px */
+        box-sizing: border-box;
     }
 
     .card i {
-        font-size: 100px;
+        font-size: 6.25rem;
+        /* 100px */
     }
 
     .card p {
         font-size: 1.25rem;
+        /* 20px */
     }
 }
 
 @media (max-width: 500px) {
     #navbar {
         padding-right: 1rem;
+        /* 16px */
         padding-left: 1rem;
+        /* 16px */
     }
 
     #navbar img {
         width: 3rem;
+        /* 48px */
         height: 3rem;
+        /* 48px */
     }
 
     .nav-buttons {
         gap: 0.75rem;
+        /* 12px */
     }
 
     .nav-link {
         font-size: 1rem;
+        /* 16px */
     }
 
     .nav-button {
         font-size: 0.625rem;
+        /* 10px */
         padding: 0.5rem;
+        /* 8px */
     }
 
     #banner {
@@ -461,6 +549,7 @@ h6 {
         align-items: center;
         justify-content: center;
         padding: 1rem;
+        /* 16px */
         text-align: center;
     }
 
@@ -468,51 +557,135 @@ h6 {
         width: 100%;
         height: auto;
         margin-top: -7rem;
+        /* -112px */
     }
 
     .nome-banner {
         font-size: 1.5rem;
+        /* 24px */
     }
 
     .titulo-banner {
         font-size: 2rem;
+        /* 32px */
     }
 
     #banner h3 {
         font-size: 1rem;
+        /* 16px */
         margin-bottom: 1rem;
+        /* 16px */
     }
 
     .button-banner {
         font-size: 1rem;
+        /* 16px */
         border-radius: 0.5rem;
+        /* 8px */
         width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        /* 0px */
+        padding-right: 0;
+        /* 0px */
     }
 
     .card-container {
-        padding: 0rem 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 1rem;
+        /* 16px */
+        padding: 0 1rem;
+        /* 16px */
+        width: 100%;
+        margin: 0.75rem 0;
+        /* 12px */
+        box-sizing: border-box;
     }
 
     .card {
         width: 4.625rem;
+        /* 74px */
         height: 6.25rem;
-        padding: 0rem 0.375rem;
+        /* 100px */
+        padding: 0 0.375rem;
+        /* 6px */
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         border-radius: 0.25rem;
+        /* 4px */
         gap: 0.25rem;
-        align-self: stretch;
+        /* 4px */
+        align-self: flex-start;
+        box-sizing: border-box;
+        flex: none;
     }
 
     .card i {
         font-size: 2.25rem;
+        /* 36px */
     }
 
     .card p {
         font-size: 0.625rem;
+        /* 10px */
     }
+
+    .hamburguer-section-title {
+        padding-top: 0.75rem;
+        /* 12px */
+        padding-bottom: 0.75rem;
+        /* 12px */
+        font-size: 2rem;
+        /* 32px */
+    }
+
+    .hamburger-card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2.6875rem;
+        /* 43px */
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        gap: 1rem;
+        /* 16px */
+    }
+
+    .hamburger-card-container2 {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2.6875rem;
+        /* 43px */
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        gap: 1rem;
+        /* 16px */
+    }
+
+    .hotdog-section-title {
+        padding-top: 0.75rem;
+        /* 12px */
+        padding-bottom: 0.75rem;
+        /* 12px */
+        font-size: 2rem;
+        /* 32px */
+    }
+
+    .hotdog-card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2.6875rem;
+        /* 43px */
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        gap: 1rem;
+        /* 16px */
+    }
+
+
 }
