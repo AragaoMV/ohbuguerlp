@@ -474,10 +474,85 @@ h6 {
 .hotdog-card-button:hover {
     background-color: #50442c;
 }
-.avaliacao-title{
+
+.avaliacao-title {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+.avaliacao-container {
+    margin: 6.75rem 0;
+    /* 108px */
+}
+
+.avaliacao-card {
+    background-color: #1e1e1e;
+    /* Cor do fundo do card */
+    border: 2px solid #594B31;
+    /* Borda dourada */
+    display: flex;
+    width: 37.5rem;
+    /* 600px */
+    height: 11.8125rem;
+    /* 189px */
+    padding: 2.25rem 2rem;
+    /* 36px vertical e 32px lateral */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    /* 15px */
+    flex-shrink: 0;
+    border-radius: 1rem;
+    /* Arredondamento dos cantos */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* Sombra */
+
+
+}
+
+.avaliacao-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem; /* 8px de espaçamento entre os elementos internos */
+    align-self: stretch; /* Faz o container ocupar toda a largura do card */
+}
+
+.avaliacao-nome {
+    
+    color: #ffffff;
+
+}
+
+.avaliacao-text {
+    color: #ffffff;
+}
+
+/* Estilo para as estrelas */
+.avaliacao-stars {
+    display: flex;
+width: 11rem;
+height: 2rem;
+justify-content: center;
+align-items: flex-start;
+flex-shrink: 0;
+}
+
+.star {
+    font-size: 2rem;
+    /* 32px */
+}
+
+.star-active {
+    color: #594B31;
+    /* Cor dourada */
+}
+
+.star-inactive {
+    color: #000000;
+    /* Cor preta */
+}
+
 
 
 @media (max-width: 1150px) {
@@ -504,20 +579,23 @@ h6 {
         font-size: 1.25rem;
         /* 20px */
     }
-    .hotdog-card-container{
+
+    .hotdog-card-container {
         display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1rem;
-    margin: 0 6.75rem;
-    align-items: center;
-    justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 1rem;
+        margin: 0 6.75rem;
+        align-items: center;
+        justify-content: center;
     }
 }
+
 @media (max-width: 850px) {
     .hamburger-card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em telas pequenas */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards por linha em telas pequenas */
     }
-    
+
 }
 
 @media (max-width: 550px) {
