@@ -481,36 +481,50 @@ h6 {
 }
 
 .avaliacao-container {
-    margin: 6.75rem 0;
-    /* 108px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    /* 48px*/
+    padding: 2rem;
+    /* 32px de espaçamento interno para o contêiner */
+    flex-wrap: wrap;
 }
 
 .avaliacao-card {
-    background-color: #1e1e1e; 
-    border: 2px solid #594B31; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    gap: 0.9375rem; /* 15px */
-    padding: 2.25rem 2rem; /* 36px vertical e 32px horizontal */
-    width: 37.5rem; /* 600px */
-    height: 11.8125rem; /* 189px */
-    border-radius: 1rem; /* 16px */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    overflow: hidden; /* Garante que nada ultrapasse os limites do card */
+    background-color: #1e1e1e;
+    border: 2px solid #594B31;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    /* 15px */
+    padding: 2.25rem 2rem;
+    /* 36px vertical e 32px horizontal */
+    width: 37.5rem;
+    /* 600px */
+    height: 11.8125rem;
+    /* 189px */
+    border-radius: 1rem;
+    /* 16px */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    /* Garante que nada ultrapasse os limites do card */
 }
 
 .avaliacao-card-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem; /* 8px */
-    width: 100%; /* 100% da largura do elemento pai */
+    gap: 0.5rem;
+    /* 8px */
+    width: 100%;
+    /* 100% da largura do elemento pai */
 }
 
 
 .avaliacao-nome {
-    
+
     color: #ffffff;
 
 }
@@ -522,7 +536,8 @@ h6 {
 /* Estilo para as estrelas */
 .avaliacao-stars {
     display: flex;
-    gap: 1rem; /* 16px */
+    gap: 1rem;
+    /* 16px */
     justify-content: start;
     align-items: center;
     width: auto;
@@ -536,12 +551,10 @@ h6 {
 
 .star-active {
     color: #594B31;
-
 }
 
 .star-inactive {
     color: #000000;
- 
 }
 
 
@@ -585,8 +598,18 @@ h6 {
     .hamburger-card-container {
         grid-template-columns: repeat(2, 1fr);
         /* 2 cards por linha em telas pequenas */
+        margin: 0 auto;
+        /* Centraliza o container na página */
+        justify-items: center;
+        /* Centraliza os itens horizontalmente */
+        align-items: center;
+        /* Centraliza os itens verticalmente */
     }
 
+    .hotdog-card-container {
+        margin: auto;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 550px) {
@@ -762,6 +785,9 @@ h6 {
         align-self: stretch;
         gap: 1rem;
         /* 16px */
+    }
+    .avaliacao-text {
+        margin-bottom: 1; /* Mesmo espaçamento que o nome do avaliador */
     }
 
 
