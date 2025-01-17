@@ -570,16 +570,23 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 11.875rem;
+    /* 190px */
     padding: 1rem 6.75rem;
+    /* 16px 108px */
     flex-direction: row;
+    margin-bottom: 1rem;
+    /* 16px */
 }
 
 .orderbanner-img {
     display: flex;
     width: 7.625rem;
+    /* 122px */
     height: 7.625rem;
+    /* 122px */
     align-items: center;
     gap: 0.625rem;
+    /* 10px */
     flex-shrink: 0;
 }
 
@@ -588,29 +595,90 @@ h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 2.5rem;
+    /* 40px */
 }
 
 .orderbanner-text-link-container {
     display: flex;
     align-items: center;
     gap: 9rem;
+    /* 144px */
     align-self: stretch;
     flex-direction: row;
 }
 
 .orderbanner-title {
     padding: 0rem 10.375rem;
+    /* 0px 166px */
 }
 
 .orderbanner-link {
     display: flex;
     align-items: center;
     gap: 0.8125rem;
+    /* 13px */
     text-decoration: none;
 }
+
 .orderbanner-link:hover h5 {
-    color: #000000; /* Nova cor ao passar o mouse */
+    color: #000000;
 }
+
+#footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 2.5rem 6.75rem;
+    /* 40px vertical 108px lateral */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3.1875rem;
+    /* 51px  */
+}
+
+.footer-logo img {
+    max-width: 11.5rem;
+    /* 184px  */
+    height: 11.5rem;
+    /* 184px */
+    margin: 0 auto;
+}
+
+.footer-info,
+.footer-hours {
+    flex: 1 1 300px;
+    text-align: left;
+    padding: 0.5rem;
+    /* 8px */
+}
+
+.footer-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info h5,
+.footer-hours h5 {
+    margin-bottom: 1.5rem;
+    /* 24px */
+}
+
+.footer-info ul li p,
+.footer-hours p {
+    margin: 0 0 0.75rem;
+    /* 12px */
+}
+
+
+
 
 @media (max-width: 1150px) {
     .card-container {
