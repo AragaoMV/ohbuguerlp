@@ -630,17 +630,18 @@ h6 {
     padding: 2.5rem 6.75rem;
     /* 40px vertical 108px lateral */
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 3.1875rem;
+    align-self: stretch;
 }
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 3.1875rem;
-    /* 51px  */
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    align-self: stretch;
 }
 
 .footer-logo img {
@@ -648,33 +649,33 @@ h6 {
     /* 184px  */
     height: 11.5rem;
     /* 184px */
-    margin: 0 auto;
 }
 
-.footer-info,
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
 .footer-hours {
-    flex: 1 1 300px;
-    text-align: left;
-    padding: 0.5rem;
-    /* 8px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
 }
 
-.footer-info ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-info h5,
-.footer-hours h5 {
+.footer-title {
     margin-bottom: 1.5rem;
-    /* 24px */
 }
 
-.footer-info ul li p,
-.footer-hours p {
-    margin: 0 0 0.75rem;
-    /* 12px */
+.footer-text {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
 }
 
 
@@ -737,6 +738,24 @@ h6 {
     .orderbanner-link-text {
         font-size: 1.25rem;
     }
+
+    #footer {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        padding: 2.5rem 6.75rem;
+        /* 40px vertical 108px lateral */
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        gap: 3.1875rem;
+        align-self: stretch;
+    }
+
+    .footer-container {
+        gap: 5rem;
+    }
+
+
 }
 
 @media (max-width: 850px) {
@@ -758,6 +777,26 @@ h6 {
         padding: 0rem 1rem;
         /* 0px 166px */
     }
+
+    #footer {
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .footer-logo img {
+        max-width: 10rem;
+        /* 184px  */
+        height: 10rem;
+        /* 184px */
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -950,7 +989,50 @@ h6 {
         gap: 1.25rem;
         align-self: stretch;
     }
-    .orderbanner-logo{
+
+    .orderbanner-logo {
         display: none;
     }
+
+    #footer {
+        display: flex;
+        padding: 2.5rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        align-self: stretch;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+
+    .footer-hours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .footer-title {
+        display: flex;
+        padding: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+
 }
