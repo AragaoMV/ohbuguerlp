@@ -578,7 +578,7 @@ h6 {
     /* 16px */
 }
 
-.orderbanner-img {
+.orderbanner-logo {
     display: flex;
     width: 7.625rem;
     /* 122px */
@@ -714,11 +714,28 @@ h6 {
         align-items: center;
         justify-content: center;
     }
-    .hamburger-card-container {
-    
-            margin: 0 auto; 
-            padding: 0 3.25rem; 
 
+    .hamburger-card-container {
+        margin: 0 auto;
+        padding: 0 3.25rem;
+    }
+
+    .orderbanner-container {
+        gap: 3.75rem;
+    }
+
+    .orderbanner-text-link-container {
+        gap: 2.5rem;
+        /* 144px */
+    }
+
+    .orderbanner-title {
+        padding: 0rem 6rem;
+        /* 0px 166px */
+    }
+
+    .orderbanner-link-text {
+        font-size: 1.25rem;
     }
 }
 
@@ -726,7 +743,7 @@ h6 {
     .hamburger-card-container {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
-        padding: 0 0; 
+        padding: 0 0;
         justify-items: center;
         align-items: center;
     }
@@ -735,6 +752,11 @@ h6 {
         margin: auto;
         justify-content: center;
         padding: 0 3rem;
+    }
+
+    .orderbanner-title {
+        padding: 0rem 1rem;
+        /* 0px 166px */
     }
 }
 
@@ -902,9 +924,33 @@ h6 {
         /* 16px */
     }
 
-    .avaliacao-text {
-        margin-bottom: 1rem;
+    .avaliacao-card {
+        display: flex;
+        height: 12.3125rem;
+        padding: 1.25rem 2rem;
+        gap: 0.4rem;
+
     }
 
+    .orderbanner-container {
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+        align-self: stretch;
+    }
 
+    .orderbanner-text-link-container {
+        display: flex;
+        padding: 0rem 2.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.25rem;
+        align-self: stretch;
+    }
+    .orderbanner-logo{
+        display: none;
+    }
 }
