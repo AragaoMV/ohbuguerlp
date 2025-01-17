@@ -26,6 +26,7 @@ O estilo do site é definido no arquivo `styles.css`, incluindo:
 - **Google Fonts:** Para incorporar ícones e fontes personalizadas.
 
 ## Como Visualizar o Projeto
+- ***Em breve o site estará hospedado, e então será disponibilizado o link para visualização*
 1. Faça o download ou clone o repositório.
 2. Certifique-se de que todos os arquivos necessários estão na estrutura correta:
    ```
